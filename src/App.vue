@@ -43,4 +43,8 @@
   width: 250px;
   max-width: calc(100vw - 125px);
 }
+
+.md-app {
+  height: 100%;
+}
 </style>
