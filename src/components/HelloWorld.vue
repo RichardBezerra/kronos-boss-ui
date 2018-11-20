@@ -1,8 +1,6 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
-    {{ colaboradoresAtivos }}
-    {{ colaboradoresInativos }}
   </div>
 </template>
 
@@ -14,8 +12,6 @@ export default {
     msg: String
   },
   computed: mapState({
-    colaboradoresOrdenados: state => state.colaboradores.sort(c => c.dataCadastro),
-    
     colaboradoresAtivos: state => state.colaboradores.filter(c => c.status),
     
     colaboradoresInativos: state => state.colaboradores.filter(c => !c.status)

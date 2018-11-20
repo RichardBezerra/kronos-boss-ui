@@ -13,6 +13,9 @@ export default new Vuex.Store({
       { id: 5, nome: 'Super-man', dataCadastro: Date.now(), status: false }
     ]
   },
+  getters: {
+    colaboradoresAtivos: state => { return state.colaboradores.filter(c => c.status) }
+  },
   mutations: {
 
   },
