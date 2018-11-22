@@ -13,7 +13,7 @@ export default {
   },
   computed: mapState({
     colaboradoresAtivos: state => state.colaboradores.filter(c => c.status),
-    
+
     colaboradoresInativos: state => state.colaboradores.filter(c => !c.status)
   })
 }

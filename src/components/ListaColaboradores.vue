@@ -1,6 +1,6 @@
 <template>
     <div>
-        <span v-for="item in colabs" :key="item.id">
+        <span v-for="item in colaboradoresAtivos" :key="item.id">
             {{ item.nome }}
         </span>
     </div>
@@ -13,7 +13,7 @@ export default {
   name: 'ListaColaboradores',
 
   computed: {
-    ...mapGetters(['colabs'])
+    ...mapGetters(['colaboradoresAtivos'])
   }
 }
 </script>
