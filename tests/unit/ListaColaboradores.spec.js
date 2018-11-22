@@ -13,7 +13,7 @@ describe('ListaColaboradores.vue', () => {
     let getters = {
       colaboradoresAtivos: () => {
         return [
-          { id: 5, nome: 'Super-man', dataCadastro: Date.now(), status: true }
+          { id: 5, nome: 'Super-man', dataCadastro: new Date(), dataCadastroFormatada: new Date().toLocaleString(), status: true }
         ]
       }
     }
@@ -25,5 +25,6 @@ describe('ListaColaboradores.vue', () => {
     let lista = shallowMount(ListaColaborades, { store, localVue })
 
     expect(lista.text()).to.contains('Super-man')
+    expect(lista.text()).to.contains(new Date().toLocaleString())
   })
 })

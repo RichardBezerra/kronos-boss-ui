@@ -1,8 +1,11 @@
 <template>
     <div>
-        <span v-for="item in colaboradoresAtivos" :key="item.id">
-            {{ item.nome }}
-        </span>
+        <ul>
+            <li v-for="item in colaboradoresAtivos" :key="item.id">
+                <span>{{ item.nome }}</span>
+                <span>{{ item.dataCadastroFormatada }}</span>
+            </li>
+        </ul>
     </div>
 </template>
 
