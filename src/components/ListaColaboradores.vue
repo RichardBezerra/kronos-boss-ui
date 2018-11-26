@@ -2,8 +2,11 @@
     <div>
         <ul>
             <li v-for="item in colaboradoresAtivos" :key="item.id">
-                <span>{{ item.nome }}</span>
-                <span>{{ item.dataCadastroFormatada }}</span>
+                <div>
+                    <img :src=item.photo />
+                </div>
+                <div>{{ item.nome }}</div>
+                <div>{{ item.dataCadastroFormatada }}</div>
             </li>
         </ul>
     </div>
