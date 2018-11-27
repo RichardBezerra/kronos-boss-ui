@@ -1,10 +1,12 @@
 import Vuex from 'vuex'
+import VueMaterial from 'vue-material'
 import { expect } from 'chai'
 import { createLocalVue, shallowMount } from '@vue/test-utils'
 import ListaColaborades from '@/components/ListaColaboradores.vue'
 
 const localVue = createLocalVue()
 localVue.use(Vuex)
+localVue.use(VueMaterial)
 
 describe('ListaColaboradores.vue', () => {
   let store
