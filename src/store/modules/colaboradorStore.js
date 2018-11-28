@@ -1,9 +1,4 @@
-import Vue from 'vue'
-import Vuex from 'vuex'
-
-Vue.use(Vuex)
-
-export default new Vuex.Store({
+export default {
   state: {
     colaboradores: [
       {
@@ -44,7 +39,7 @@ export default new Vuex.Store({
     ]
   },
   getters: {
-    colaboradoresAtivos: state => {
+    colaboradoresAtivos (state) {
       return state
         .colaboradores
         .filter(colab => colab.status)
@@ -57,4 +52,4 @@ export default new Vuex.Store({
   actions: {
 
   }
-})
+}

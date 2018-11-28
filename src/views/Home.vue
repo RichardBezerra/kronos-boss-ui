@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import ListaColaboradores from '@/components/ListaColaboradores.vue'
+import ListaColaboradores from '@/components/colaborador/ListaColaboradores.vue'
 
 export default {
   name: 'home',
