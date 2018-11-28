@@ -1,10 +1,7 @@
-import Vue from 'vue'
-import Vuex from 'vuex'
+const actions = () => {
 
-Vue.use(Vuex)
+}
 
-export default new Vuex.Store({
-  actions: {
-
-  }
-})
+export default {
+  actions
+}
