@@ -87,7 +87,9 @@ export default {
     }
   },
   mutations: {
-
+    create (state, payload) {
+      state.colaboradores.push({ ...payload, status: true })
+    }
   },
   actions: {
 
