@@ -14,11 +14,11 @@ export default {
   name: 'EditColaborador',
 
   methods: {
-     ...mapMutations(['create']),
+    ...mapMutations(['create']),
 
-     createColaborador () {
-       this.create({dataCadastro: new Date()})
-     }
+    createColaborador () {
+      this.create({ dataCadastro: new Date() })
+    }
   }
 }
 </script>
