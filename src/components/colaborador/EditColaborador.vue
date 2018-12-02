@@ -8,92 +8,101 @@
 
         <md-card-content>
           <div class="md-layout md-gutter">
-            <div class="md-layout-item md-size-80">
-              <md-field>
-                <label for="name">Nome</label>
-                <md-input name="name" id="name" autocomplete="given-name" v-model="colaborador.nome" />
-              </md-field>
-            </div>
+            <div class="md-layout-item md-size-70">
 
-            <div class="md-layout-item md-size-20">
-              <md-field>
-                <label for="matricula">Matrícula</label>
-                <md-input name="matricula" id="matricula" v-model="colaborador.matricula" />
-              </md-field>
-            </div>
-
-            <div class="md-layout-item md-size-100">
               <div class="md-layout md-gutter">
-                <div class="md-layout-item md-size-50">
+                <div class="md-layout-item md-size-80">
                   <md-field>
-                    <label for="cpf">CPF</label>
-                    <md-input name="cpf" id="cpf" v-model="colaborador.cpf" />
+                    <label for="name">Nome</label>
+                    <md-input name="name" id="name" autocomplete="given-name" v-model="colaborador.nome" />
                   </md-field>
                 </div>
 
-                <div class="md-layout-item md-size-50">
+                <div class="md-layout-item md-size-20">
                   <md-field>
-                    <label for="pis">PIS</label>
-                    <md-input name="pis" id="pis" v-model="colaborador.pis" />
+                    <label for="matricula">Matrícula</label>
+                    <md-input name="matricula" id="matricula" v-model="colaborador.matricula" />
                   </md-field>
                 </div>
+
+                <div class="md-layout-item md-size-100">
+                  <div class="md-layout md-gutter">
+                    <div class="md-layout-item md-size-50">
+                      <md-field>
+                        <label for="cpf">CPF</label>
+                        <md-input name="cpf" id="cpf" v-model="colaborador.cpf" />
+                      </md-field>
+                    </div>
+
+                    <div class="md-layout-item md-size-50">
+                      <md-field>
+                        <label for="pis">PIS</label>
+                        <md-input name="pis" id="pis" v-model="colaborador.pis" />
+                      </md-field>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="md-layout-item md-size-100">
+                  <div class="md-layout md-gutter">
+                    <div class="md-layout-item md-size-50">
+                      <md-field>
+                        <label for="senha">Senha</label>
+                        <md-input name="senha" id="senha" v-model="colaborador.passwordlog" />
+                      </md-field>
+                    </div>
+
+                    <div class="md-layout-item md-size-50">
+                      <md-field>
+                        <label for="cargo">Cargo</label>
+                        <md-input name="cargo" id="cargo" v-model="colaborador.cargo" />
+                      </md-field>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="md-layout-item md-size-100">
+                  <div class="md-layout md-gutter">
+                    <div class="md-layout-item md-size-50">
+                      <md-field>
+                        <label for="departamento">Departamento</label>
+                        <md-select name="departamento" id="departamento" v-model="colaborador.departamento" />
+                      </md-field>
+                    </div>
+
+                    <div class="md-layout-item md-size-50">
+                      <md-field>
+                        <label for="turno">Turno</label>
+                        <md-select name="turno" id="turno" v-model="colaborador.turno" />
+                      </md-field>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="md-layout-item md-size-100">
+                  <div class="md-layout md-gutter">
+                    <div class="md-layout-item md-size-50">
+                      <md-field>
+                        <label for="email">Email</label>
+                        <md-input name="email" id="email" v-model="colaborador.email" />
+                      </md-field>
+                    </div>
+
+                    <div class="md-layout-item md-size-50">
+                      <md-field>
+                        <label for="celular">Celular</label>
+                        <md-input name="celular" id="celular" v-model="colaborador.celular" />
+                      </md-field>
+                    </div>
+                  </div>
+                </div>
+
               </div>
             </div>
 
-            <div class="md-layout-item md-size-100">
-              <div class="md-layout md-gutter">
-                <div class="md-layout-item md-size-50">
-                  <md-field>
-                    <label for="senha">Senha</label>
-                    <md-input name="senha" id="senha" v-model="colaborador.passwordlog" />
-                  </md-field>
-                </div>
-
-                <div class="md-layout-item md-size-50">
-                  <md-field>
-                    <label for="cargo">Cargo</label>
-                    <md-input name="cargo" id="cargo" v-model="colaborador.cargo" />
-                  </md-field>
-                </div>
-              </div>
+            <div class="md-layout-item md-size-30">
+              <div class="picture"></div>
             </div>
-
-            <div class="md-layout-item md-size-100">
-              <div class="md-layout md-gutter">
-                <div class="md-layout-item md-size-50">
-                  <md-field>
-                    <label for="departamento">Departamento</label>
-                    <md-select name="departamento" id="departamento" v-model="colaborador.departamento" />
-                  </md-field>
-                </div>
-
-                <div class="md-layout-item md-size-50">
-                  <md-field>
-                    <label for="turno">Turno</label>
-                    <md-select name="turno" id="turno" v-model="colaborador.turno" />
-                  </md-field>
-                </div>
-              </div>
-            </div>
-
-            <div class="md-layout-item md-size-100">
-              <div class="md-layout md-gutter">
-                <div class="md-layout-item md-size-50">
-                  <md-field>
-                    <label for="email">Email</label>
-                    <md-input name="email" id="email" v-model="colaborador.email" />
-                  </md-field>
-                </div>
-
-                <div class="md-layout-item md-size-50">
-                  <md-field>
-                    <label for="celular">Celular</label>
-                    <md-input name="celular" id="celular" v-model="colaborador.celular" />
-                  </md-field>
-                </div>
-              </div>
-            </div>
-
           </div>
         </md-card-content>
 
@@ -106,6 +115,11 @@
 </template>
 
 <style lang="scss" scoped>
+.picture {
+  background-color: #EEE;
+  width: 100%;
+  height: 100%;
+}
 </style>
 
 <script>
