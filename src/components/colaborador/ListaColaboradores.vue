@@ -4,7 +4,7 @@
       <div v-for="item in colaboradoresAtivos" :key="item.id">
         <md-list-item>
           <md-avatar>
-            <img :src="item.photo" alt="People">
+            <img :src="item.photo" alt="People" v-if="item.photo">
           </md-avatar>
 
           <div class="md-list-item-text">
