@@ -23,7 +23,7 @@ describe('EditColaborador.vue', () => {
 
     let editComponent = mount(EditColaborador, { store, localVue })
 
-    let addButton = editComponent.find({ name: 'MdButton' })
+    let addButton = editComponent.find('#colaborador-button')
 
     addButton.trigger('click')
 
@@ -44,7 +44,7 @@ describe('EditColaborador.vue', () => {
 
     let editComponent = mount(EditColaborador, { store, localVue })
 
-    let addButton = editComponent.find({ name: 'MdButton' })
+    let addButton = editComponent.find('#colaborador-button')
 
     addButton.trigger('click')
 

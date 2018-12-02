@@ -101,13 +101,20 @@
             </div>
 
             <div class="md-layout-item md-size-30">
-              <div class="picture"></div>
+              <md-empty-state
+                md-icon="add_a_photo">
+                <md-button>Foto</md-button>
+              </md-empty-state>
             </div>
           </div>
         </md-card-content>
 
         <md-card-actions>
-          <md-button type="submit" class="md-raised md-primary" @click="createColaborador">Cadastrar</md-button>
+          <md-button
+            type="submit"
+            class="md-raised md-primary"
+            @click="createColaborador"
+            id="colaborador-button">Cadastrar</md-button>
         </md-card-actions>
       </md-card>
     </form>
@@ -117,8 +124,6 @@
 <style lang="scss" scoped>
 .picture {
   background-color: #EEE;
-  width: 100%;
-  height: 100%;
 }
 </style>
 
