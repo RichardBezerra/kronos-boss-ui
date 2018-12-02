@@ -107,7 +107,7 @@
         </md-card-content>
 
         <md-card-actions>
-          <md-button type="submit" class="md-primary" @click="createColaborador">Cadastrar</md-button>
+          <md-button type="submit" class="md-raised md-primary" @click="createColaborador">Cadastrar</md-button>
         </md-card-actions>
       </md-card>
     </form>
@@ -151,7 +151,6 @@ export default {
     ...mapMutations(['create']),
 
     createColaborador () {
-      console.log('clicado')
       this.create(this.colaborador)
     }
   }
