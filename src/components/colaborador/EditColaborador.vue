@@ -101,9 +101,9 @@
             </div>
 
             <div class="md-layout-item md-size-30">
-              <md-empty-state
-                md-icon="add_a_photo">
-                <md-button>Foto</md-button>
+              <md-empty-state md-icon="add_a_photo">
+                <md-button @click="openFotoFileSelector" id="colaborador-photo-button">Foto</md-button>
+                <input type="file" id="colaborador-file-selector" />
               </md-empty-state>
             </div>
           </div>
@@ -113,8 +113,8 @@
           <md-button
             type="submit"
             class="md-raised md-primary"
-            @click="createColaborador"
-            id="colaborador-button">Cadastrar</md-button>
+            id="colaborador-button"
+            @click="createColaborador">Cadastrar</md-button>
         </md-card-actions>
       </md-card>
     </form>
@@ -124,6 +124,9 @@
 <style lang="scss" scoped>
 .picture {
   background-color: #EEE;
+}
+input[type="file"] {
+  display: none;
 }
 </style>
 
@@ -147,7 +150,8 @@ export default {
         pis: '',
         passwordlog: '',
         departamento: '',
-        turno: 1
+        turno: 1,
+        photo: ''
       }
     }
   },
@@ -157,6 +161,10 @@ export default {
 
     createColaborador () {
       this.create(this.colaborador)
+    },
+
+    openFotoFileSelector () {
+      document.getElementById('colaborador-file-selector').click()
     }
   }
 }
