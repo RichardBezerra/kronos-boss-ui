@@ -13,7 +13,7 @@ export default {
         pis: '05259684745',
         passwordlog: '1234',
         departamento: 1,
-        turno: 1,        
+        turno: 1,
         photo: 'https://i.etsystatic.com/14168448/r/il/b0155f/1605731592/il_570xN.1605731592_fis8.jpg'
       },
       {
