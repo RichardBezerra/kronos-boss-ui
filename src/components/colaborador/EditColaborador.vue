@@ -170,7 +170,7 @@ export default {
     },
 
     previewPicture () {
-      this.srcImagePreview = (window.URL ? URL : webkitURL).createObjectURL(document.getElementById('colaborador-file-selector').files[0])
+      this.srcImagePreview = (window.URL ? URL : window.webkitURL).createObjectURL(document.getElementById('colaborador-file-selector').files[0])
     }
   }
 }
