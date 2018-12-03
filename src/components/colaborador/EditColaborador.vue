@@ -101,9 +101,10 @@
             </div>
 
             <div class="md-layout-item md-size-30">
-              <md-empty-state md-icon="add_a_photo">
+              <img :src="srcImagePreview" v-if="srcImagePreview.length" />
+              <md-empty-state md-icon="add_a_photo" v-else>
                 <md-button @click="openFotoFileSelector" id="colaborador-photo-button">Foto</md-button>
-                <input type="file" id="colaborador-file-selector" />
+                <input type="file" id="colaborador-file-selector" accept="image/*;capture=camera" v-on:change="previewPicture" />
               </md-empty-state>
             </div>
           </div>
@@ -152,7 +153,8 @@ export default {
         departamento: '',
         turno: 1,
         photo: ''
-      }
+      },
+      srcImagePreview: ''
     }
   },
 
@@ -165,6 +167,10 @@ export default {
 
     openFotoFileSelector () {
       document.getElementById('colaborador-file-selector').click()
+    },
+
+    previewPicture () {
+      this.srcImagePreview = (window.URL ? URL : webkitURL).createObjectURL(document.getElementById('colaborador-file-selector').files[0])
     }
   }
 }
