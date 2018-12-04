@@ -1,6 +1,6 @@
 <template>
   <div>
-    <form novalidate class="md-layout">
+    <form novalidate class="md-layout" @submit.prevent="false">
       <md-card class="md-layout-item">
         <md-card-header>
           <div class="md-title">Colaborador</div>
